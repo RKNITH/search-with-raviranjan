@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    background-color: #f4f4f4;
+    transition: background 0.3s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input and Buttons */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: white;
+}
+
+button:nth-of-type(1) {
+    background-color: #007bff;
+}
+
+button:nth-of-type(1):hover {
+    background-color: #0056b3;
+}
+
+button:nth-of-type(2) {
+    background-color: #333;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #555;
+}
+
+/* Results Section */
+.results {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    overflow-y: auto;
+}
+
+.results h3 {
+    color: #007bff;
+    font-size: 24px;
+}
+
+.results p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode input[type="text"] {
+    background-color: #444;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+.dark-mode .results {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .results h3 {
+    color: #1e90ff;
+}
+
+.dark-mode .results p {
+    color: #fff;
+}
