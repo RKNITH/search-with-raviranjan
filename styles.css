@@ -6,11 +6,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    /* Ensures full height usage */
     background-color: #f4f4f4;
     transition: background 0.3s ease-in-out;
 }
 
+/* Main container */
 .container {
     text-align: center;
     background: white;
@@ -21,13 +23,14 @@ body {
     max-width: 400px;
 }
 
+/* Title */
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Input and Buttons */
+/* Input Box */
 input[type="text"] {
     width: 80%;
     padding: 10px;
@@ -42,6 +45,7 @@ input[type="text"]:focus {
     border-color: #0056b3;
 }
 
+/* Buttons */
 button {
     margin: 10px 5px;
     padding: 10px 15px;
@@ -53,6 +57,7 @@ button {
     color: white;
 }
 
+/* Search Button */
 button:nth-of-type(1) {
     background-color: #007bff;
 }
@@ -61,6 +66,7 @@ button:nth-of-type(1):hover {
     background-color: #0056b3;
 }
 
+/* Dark Mode Toggle Button */
 button:nth-of-type(2) {
     background-color: #333;
 }
@@ -69,15 +75,14 @@ button:nth-of-type(2):hover {
     background-color: #555;
 }
 
-/* Results Section */
+/* Search Results */
 .results {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: left;
     padding: 10px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
     overflow-y: auto;
 }
 
@@ -119,4 +124,31 @@ button:nth-of-type(2):hover {
 
 .dark-mode .results p {
     color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        margin-top: 0;
+        /* Removed excessive margin */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    input[type="text"] {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
 }
